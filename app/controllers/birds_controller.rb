@@ -4,6 +4,6 @@ class BirdsController < ApplicationController
   #   render 'birds/index.html.erb'
   # end
 
-render json: { message: 'Hashes of data will get converted to JSON' }
+render  json:@birds
   render plain: "Hello #{@birds[3].name}"
 end
